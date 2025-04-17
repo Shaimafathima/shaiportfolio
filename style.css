@@ -829,18 +829,29 @@ footer{
 
 
 @media only screen and (max-width: 540px) {
-  .footer-menu {
-    flex-wrap: nowrap;
+  footer {
+    padding-block: 20px 30px;
+    gap: 15px;
+  }
+
+  .middle-footer {
+    width: 100%;
     overflow-x: auto;
-    justify-content: flex-start;
-    gap: 10px;
-    padding: 0 10px;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     white-space: nowrap;
+    overflow-x: auto;
     scrollbar-width: none; /* Firefox */
+    gap: 15px;
+    padding: 0 10px;
   }
 
   .footer-menu::-webkit-scrollbar {
-    display: none; /* Chrome */
+    display: none; /* Chrome, Safari */
   }
 
   .footer_menu_list a {
@@ -848,7 +859,15 @@ footer{
     margin-inline: 8px;
   }
 
-  footer {
-    padding-block: 30px 40px;
+  .footer-social-icons {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .bottom-footer {
+    font-size: 13px;
+    text-align: center;
+    padding: 0 10px;
   }
 }
