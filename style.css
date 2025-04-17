@@ -829,6 +829,116 @@ footer{
 
 
 @media only screen and (max-width: 540px) {
+  .middle-footer {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 20px;
+    padding: 0 10px;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .footer-menu::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .footer_menu_list {
+    flex: 0 0 auto;
+  }
+
+  .footer_menu_list a {
+    font-size: 13px;
+    margin: 0;
+    padding: 6px 4px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color-second);
+  }
+
+  footer {
+    padding-block: 25px 35px;
+  }
+}
+
+
+
+@media only screen and (max-width: 540px) {
+  /* --- Footer menu scroll fix --- */
+  .middle-footer {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 20px;
+    padding: 0 10px;
+    scrollbar-width: none;
+  }
+
+  .footer-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .footer_menu_list {
+    flex: 0 0 auto;
+  }
+
+  .footer_menu_list a {
+    font-size: 13px;
+    margin: 0;
+    padding: 6px 4px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color-second);
+  }
+
+  footer {
+    padding-block: 25px 35px;
+  }
+
+  /* --- Nav hamburger fix --- */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0 16px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .nav-menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 16px;
+    z-index: 1001;
+  }
+
+  .nav-menu-btn i {
+    font-size: 26px;
+    color: var(--text-color-second);
+  }
+}
+
+@media only screen and (max-width: 540px) {
   /* --- Footer menu scroll fix --- */
   .middle-footer {
     width: 100%;
@@ -879,6 +989,7 @@ footer{
     overflow-x: hidden;
     box-sizing: border-box;
     justify-content: space-between;
+    z-index: 100;
   }
 
   .nav-menu-btn {
