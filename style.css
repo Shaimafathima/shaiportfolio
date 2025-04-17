@@ -829,11 +829,6 @@ footer{
 
 
 @media only screen and (max-width: 540px) {
-  footer {
-    padding-block: 20px 30px;
-    gap: 15px;
-  }
-
   .middle-footer {
     width: 100%;
     overflow-x: auto;
@@ -841,33 +836,34 @@ footer{
 
   .footer-menu {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    white-space: nowrap;
+    justify-content: flex-start;
     overflow-x: auto;
-    scrollbar-width: none; /* Firefox */
-    gap: 15px;
+    white-space: nowrap;
+    gap: 20px;
     padding: 0 10px;
+    scrollbar-width: none; /* Firefox */
   }
 
   .footer-menu::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
+    display: none; /* Chrome/Safari */
+  }
+
+  .footer_menu_list {
+    flex: 0 0 auto;
   }
 
   .footer_menu_list a {
-    font-size: 14px;
-    margin-inline: 8px;
-  }
-
-  .footer-social-icons {
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .bottom-footer {
     font-size: 13px;
-    text-align: center;
-    padding: 0 10px;
+    margin: 0;
+    padding: 6px 4px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color-second);
+  }
+
+  footer {
+    padding-block: 25px 35px;
   }
 }
