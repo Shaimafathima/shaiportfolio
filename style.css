@@ -639,10 +639,7 @@ footer{
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
-@media only screen and (max-width: 540px){
-    .featured-name{
-        font-size: 40px;
-    }
+
     .project-box{
         width: 100%;
     }
@@ -835,11 +832,7 @@ footer{
 
 
 
-  @media only screen and (max-width: 540px) {
-    .middle-footer {
-      width: 100%;
-      overflow-x: auto;
-    }
+  
   
     .footer-menu {
       display: flex;
@@ -877,8 +870,8 @@ footer{
 
 @media only screen and (max-width: 540px) {
   nav {
-    padding-inline: 10px !important;
-    justify-content: space-between !important;
+    padding: 0 10px !important;
+    justify-content: flex-start !important;
     overflow-x: hidden !important;
     box-sizing: border-box;
   }
@@ -888,10 +881,8 @@ footer{
     align-items: center !important;
     justify-content: center !important;
     position: relative !important;
-    right: auto !important;
-    left: auto !important;
-    margin-left: auto !important;
-    margin-right: 0 !important;
+    margin-right: auto !important;
+    margin-left: 0 !important;
     z-index: 9999 !important;
   }
 
