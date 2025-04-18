@@ -124,9 +124,16 @@ nav{
     padding-inline: 15px;
     margin-inline: 20px;
 }
-.nav-menu-btn{
-    display: none;
+
+.nav-menu-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  margin-left: auto;
+  margin-right: 10px;
 }
+
 .nav-menu-btn i{
     font-size: 28px;
     cursor: pointer;
@@ -583,11 +590,16 @@ footer{
     .nav_menu_list{
         flex-direction: column;
     }
-    .nav-menu-btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    
+.nav-menu-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
     .featured-box{
         flex-direction: column;
         justify-content: center;
@@ -887,15 +899,16 @@ footer{
     z-index: 1000;
   }
 
-  .nav-menu-btn {
-    display: flex !important;
-    position: absolute;
-    left: 10px;
-    top: 25px;
-    z-index: 1001;
-    align-items: center;
-    justify-content: center;
-  }
+  
+.nav-menu-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
 
   .nav-menu-btn i {
     font-size: 26px;
