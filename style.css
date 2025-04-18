@@ -866,3 +866,32 @@ footer{
     padding-block: 25px 35px;
   }
 }
+
+
+
+
+@media only screen and (max-width: 540px) {
+  nav {
+    padding-inline: 16px !important;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+
+  .nav-menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 16px;
+    z-index: 1001;
+  }
+
+  .nav-menu-btn i {
+    font-size: 26px;
+    color: var(--text-color-second);
+  }
+}
+
