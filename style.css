@@ -890,7 +890,7 @@ footer{
   .nav-menu-btn {
     display: flex !important;
     position: absolute;
-    right: 16px;
+    right: 4px;
     top: 25px;
     z-index: 1001;
     align-items: center;
