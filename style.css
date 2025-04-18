@@ -827,66 +827,74 @@ footer{
   }
 
 
-@media only screen and (max-width: 540px) {
-  .middle-footer {
-    width: 100%;
-    overflow-x: auto;
+
+  
+
+
+
+
+
+
+  
+  
+    .footer-menu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow-x: auto;
+      white-space: nowrap;
+      gap: 20px;
+      padding: 0 10px;
+      scrollbar-width: none; /* Firefox */
+    }
+  
+    .footer-menu::-webkit-scrollbar {
+      display: none; /* Chrome/Safari */
+    }
+  
+    .footer_menu_list {
+      flex: 0 0 auto;
+    }
+  
+    .footer_menu_list a {
+      font-size: 13px;
+      margin: 0;
+      padding: 6px 4px;
+      display: inline-block;
+      text-decoration: none;
+      color: var(--text-color-second);
+    }
+  
+    footer {
+      padding-block: 25px 35px;
+    }
   }
-
-  .footer-menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 20px;
-    padding: 0 10px;
-    scrollbar-width: none; /* Firefox */
-  }
-
-  .footer-menu::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
-  }
-
-  .footer_menu_list {
-    flex: 0 0 auto;
-  }
-
-  .footer_menu_list a {
-    font-size: 13px;
-    margin: 0;
-    padding: 6px 4px;
-    display: inline-block;
-    text-decoration: none;
-    color: var(--text-color-second);
-  }
-
-  footer {
-    padding-block: 25px 35px;
-  }
-}
-
-
-
 
 @media only screen and (max-width: 540px) {
   nav {
-    padding-inline: 16px !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    padding: 0 16px !important;
     overflow-x: hidden;
     box-sizing: border-box;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
   }
 
   .nav-menu-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
     position: absolute;
-    top: 25px;
     right: 16px;
+    top: 25px;
     z-index: 1001;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-menu-btn i {
@@ -894,4 +902,3 @@ footer{
     color: var(--text-color-second);
   }
 }
-
